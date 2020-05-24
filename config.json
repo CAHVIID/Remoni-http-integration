@@ -1,0 +1,19 @@
+{
+	"baseURL" : "https://api.remoni.com/v1",
+	"token" : "basic Y2FoQGJ5Zy5kdHUuZGs6bW5uZEFHMjg=",
+	"accountId" : "8477",
+	"units" : [2200,2202,2203,2204,2205,2206,2207,2208,2209,2210,2211,2212,2213,2214,2215,2216,2217,2218,2219,2220],
+	"unitTypeInputId" : [3101, 3102, 3103],
+	"DB_ENDPOINT" : "https://dpx-202-1-storage.documents.azure.com:443/",
+    "DB_PRIMARYKEY" : "ITNQVZ29R9m7Vs8yIgWXm4aEd5Gj80LHm9hK2nA9aoPGlt7y0i9G0ipkW9W3I3o4yBQOWY5voubEMVueRWQwmA==",
+    "DATABASE" : "dpx-202-1-db",
+    "CONTAINER" : "sandbox",	
+	"EventHubURL" : "amqps://dpx-202-1-eventhub.servicebus.windows.net/sandbox",
+	"EventHubPolicyName" : "devices",
+	"EventHubPrimaryKey" : "7tUBoWLOicRV8o3KspCyjguPqOcjcGRqplyTEe9N7a4=",
+	"EventHubBatchTimer" : "600",
+	"test_EventHubURL" : "amqps://dpx-202-1-eventhub.servicebus.windows.net/26661-sca",
+	"test_EventHubPolicyName" : "devices",
+	"test_EventHubPrimaryKey" : "GArz9CWmrUGNJIXn8V5OPcilV2FcXM5oZb0O1r7wsjk=",
+	"test_EventHubBatchTimer" : "10"
+}
