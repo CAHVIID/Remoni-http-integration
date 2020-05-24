@@ -194,19 +194,6 @@ def sendPackage(data):
                     tele['values']['temperature_ext2'] = round(externalSensor2[i]['Value'],2)
                     newUnit['telemetry'].append(tele)  
                 
-#                for eachSensorType in telemetry:
-#                    for i, measure in enumerate(eachSensorType):
-#                        tele[i] = {'ts' : round(datetime.timestamp(datetime.strptime(measure['Timestamp'],"%Y-%m-%dT%H:%M:%S%z"))*1000),
-#                                'values' : {}}
-#                        for key in measure.keys():
-#                            if key == 'UnitTypeInputId' and measure[key] == 3101:
-#                                tele[i]['values']['temperature_int'] = round(measure['Value'],2)
-#                            elif key == 'UnitTypeInputId' and measure[key] == 3102:
-#                                tele[i]['values']['temperature_ext1'] = round(measure['Value'],2)
-#                            elif key == 'UnitTypeInputId' and measure[key] == 3103:
-#                                tele[i]['values']['temperature_ext2'] = round(measure['Value'],2)
-    #                else:
-#                newUnit['telemetry'].append(tele)
             except Exception as e:
                 logPrint('Telemetry processing failed for device: ' + str(newUnit['deviceid']) + ', ' + newUnit['devicename'] +'. Error: ' + str(e))
                 print(telemetry)
